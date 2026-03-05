@@ -1,0 +1,2 @@
+Bot_token = "8449257737:AAFIZn1xn3VTE4bsmfF6QWh73dBWSlGb4og"
+admins = [7072212883]
