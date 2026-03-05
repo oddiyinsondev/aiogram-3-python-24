@@ -5,6 +5,7 @@ from config.config import Bot_token
 from handler.main1 import translate_router
 from handler.start import start_router
 from admin.main import admin_router
+from admin.reklama import rek_router
 
 
 bot = Bot(token=Bot_token)
@@ -14,6 +15,7 @@ logging.basicConfig(level=logging.INFO)
 
 async def main():
     dp.include_router(admin_router)
+    dp.include_router(rek_router)
     dp.include_router(start_router)
     dp.include_router(translate_router)
     await dp.start_polling(bot)
